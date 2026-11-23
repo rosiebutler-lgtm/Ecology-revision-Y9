@@ -13,7 +13,7 @@
   --bg:#d6e5cf; --bgTop:#eef5e9; --surface:#fbfdf9; --surface2:#e6efe0; --ink:#13302a; --ink2:#46604f; --line:#c3d6bd;
   --moss:#2c7a4b; --mossInk:#ffffff; --tide:#1f668e; --kowhai:#d9a514; --kowhaiSoft:#fbefc2;
   --good:#1d7543; --goodbg:#e0f3e5; --bad:#b0352d; --badbg:#fbe3df;
-  --shadeTop:rgba(10,26,16,.62); --shadeMid:rgba(10,26,16,.42); --shadeBot:rgba(10,26,16,.58); --onPhoto:#f6f9f2; --onPhoto2:rgba(240,246,236,.86); --onPhotoAccent:#bfe6a8; --bar:rgba(236,244,231,.94);
+  --shadeTop:rgba(10,26,16,.62); --shadeMid:rgba(10,26,16,.42); --shadeBot:rgba(10,26,16,.58); --onPhoto:#f6f9f2; --onPhoto2:rgba(240,246,236,.86); --onPhotoAccent:#bfe6a8; --pill:#cbe8b5; --pillInk:#16351f; --bar:rgba(236,244,231,.94);
   --sky:#e1eff5; --soil:#c9b48f; --trunk:#7a5a3a; --leaf:#2f7d48; --leaf2:#6aae66; --grass:#93c162; --sun:#f2c230; --petal:#ffffff; --quad:#b7d48c;
   --display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
   --body:"Atkinson Hyperlegible",system-ui,-apple-system,"Segoe UI",sans-serif;
@@ -24,7 +24,7 @@
     --bg:#09160f; --bgTop:#123022; --surface:#132a1f; --surface2:#1b3a2b; --ink:#e4efe8; --ink2:#a9c2b2; --line:#2a4a39;
     --moss:#6cc48d; --mossInk:#0e1b17; --tide:#7cbde3; --kowhai:#f0c64a; --kowhaiSoft:#3a3216;
     --good:#7ad49b; --goodbg:rgba(80,190,120,.16); --bad:#ff9a8f; --badbg:rgba(230,90,80,.18);
-    --shadeTop:rgba(4,12,8,.78); --shadeMid:rgba(4,12,8,.6); --shadeBot:rgba(4,12,8,.76); --onPhoto:#eef4ea; --onPhoto2:rgba(228,238,230,.82); --onPhotoAccent:#a8dc8e; --bar:rgba(10,24,17,.94);
+    --shadeTop:rgba(4,12,8,.78); --shadeMid:rgba(4,12,8,.6); --shadeBot:rgba(4,12,8,.76); --onPhoto:#eef4ea; --onPhoto2:rgba(228,238,230,.82); --onPhotoAccent:#a8dc8e; --pill:#3d7a4a; --pillInk:#eef8ea; --bar:rgba(10,24,17,.94);
     --sky:#16303b; --soil:#5a4a33; --trunk:#8c6c4c; --leaf:#3f9058; --leaf2:#5e9f62; --grass:#6c9744; --sun:#f0c64a; --petal:#f4f4ee; --quad:#41622c;
     color-scheme:dark;
   }
@@ -33,7 +33,7 @@
   --bg:#09160f; --bgTop:#123022; --surface:#132a1f; --surface2:#1b3a2b; --ink:#e4efe8; --ink2:#a9c2b2; --line:#2a4a39;
   --moss:#6cc48d; --mossInk:#0e1b17; --tide:#7cbde3; --kowhai:#f0c64a; --kowhaiSoft:#3a3216;
   --good:#7ad49b; --goodbg:rgba(80,190,120,.16); --bad:#ff9a8f; --badbg:rgba(230,90,80,.18);
-  --shadeTop:rgba(4,12,8,.78); --shadeMid:rgba(4,12,8,.6); --shadeBot:rgba(4,12,8,.76); --onPhoto:#eef4ea; --onPhoto2:rgba(228,238,230,.82); --onPhotoAccent:#a8dc8e; --bar:rgba(10,24,17,.94);
+  --shadeTop:rgba(4,12,8,.78); --shadeMid:rgba(4,12,8,.6); --shadeBot:rgba(4,12,8,.76); --onPhoto:#eef4ea; --onPhoto2:rgba(228,238,230,.82); --onPhotoAccent:#a8dc8e; --pill:#3d7a4a; --pillInk:#eef8ea; --bar:rgba(10,24,17,.94);
   --sky:#16303b; --soil:#5a4a33; --trunk:#8c6c4c; --leaf:#3f9058; --leaf2:#5e9f62; --grass:#6c9744; --sun:#f0c64a; --petal:#f4f4ee; --quad:#41622c;
   color-scheme:dark;
 }
@@ -54,7 +54,8 @@ body{margin:0;color:var(--ink);font:400 1.0625rem/1.6 var(--body);
 .hero h1,.phase-head h2{text-shadow:0 2px 18px rgba(0,0,0,.35)}
 .objective b{color:var(--onPhoto2)!important}
 .hero .tag.t-long{color:var(--onPhoto)}
-.hero .pcard,.hero .focus .pill{color:var(--ink)}
+.hero .pcard{color:var(--ink)}
+.hero .focus .pill{background:var(--pill);color:var(--pillInk)}
 .hero .pcard .eyebrow{color:var(--moss)}
 .hero .pcard p{color:var(--ink2)}
 .hero .tag.t-short{color:var(--kowhai)}
